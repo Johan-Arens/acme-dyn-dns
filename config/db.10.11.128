@@ -1,0 +1,13 @@
+$ORIGIN .
+$TTL 604800	; 1 week
+128.11.10.in-addr.arpa	IN SOA	ns1.test.acme.com. root.test.acme.com. (
+				3          ; serial
+				604800     ; refresh (1 week)
+				86400      ; retry (1 day)
+				2419200    ; expire (4 weeks)
+				604800     ; minimum (1 week)
+				)
+			NS	ns1.
+$ORIGIN 128.11.10.in-addr.arpa.
+1			PTR	gw.test.acme.com.
+38			PTR	ns1.test.acme.com.
